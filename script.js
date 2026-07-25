@@ -235,7 +235,11 @@ const largePrice = document.getElementById("largePrice");
 
 const kitkat = document.getElementById("kitkat");
 const chocolate = document.getElementById("chocolate");
+const customerName =
+document.getElementById("customerName");
 
+const roomNumber =
+document.getElementById("roomNumber");
 const quantityText = document.getElementById("quantity");
 const totalText = document.getElementById("total");
 
@@ -354,7 +358,11 @@ document.querySelectorAll('input[name="size"]').forEach(radio=>{
 radio.addEventListener("change",calculateTotal);
 
 });
+document.querySelectorAll('input[name="delivery"]').forEach(radio=>{
 
+radio.addEventListener("change",calculateTotal);
+
+});
 kitkat.addEventListener("change",calculateTotal);
 
 chocolate.addEventListener("change",calculateTotal);
@@ -390,7 +398,16 @@ function calculateTotal(){
         total += 20;
 
     }
+const delivery =
+document.querySelector(
+'input[name="delivery"]:checked'
+).value;
 
+if(delivery==="room"){
+
+    total += 10;
+
+}
     total *= quantity;
 
     totalText.textContent = total;
@@ -454,7 +471,32 @@ loadMenu(filtered);
 orderBtn.addEventListener("click",()=>{
 
 if(!selectedDrink) return;
+const name =
+customerName.value.trim();
 
+const room =
+roomNumber.value.trim();
+
+if(name===""){
+
+alert("Please enter your Full Name.");
+
+return;
+
+}
+
+if(room===""){
+
+alert("Please enter your Room Number.");
+
+return;
+
+}
+
+const delivery =
+document.querySelector(
+'input[name="delivery"]:checked'
+).value;
 const size =
 document.querySelector(
 'input[name="size"]:checked'
@@ -484,7 +526,11 @@ toppings.push("Extra Chocolate");
 total+=20;
 
 }
+if(delivery==="room"){
 
+total+=10;
+
+}
 total*=quantity;
 
 const toppingText =
@@ -496,7 +542,11 @@ toppings.join(", ")
 
 const message = `Hi Cozy Brews! ☕%0A%0A
 
-I'd like to place an order.%0A%0A
+Name: ${name}%0A
+
+Room Number: ${room}%0A
+
+Delivery: ${delivery==="room" ? "Room Delivery (+₹10)" : "Pickup"}%0A%0A
 
 Drink: ${selectedDrink.name}%0A
 
