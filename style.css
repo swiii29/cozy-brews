@@ -1043,7 +1043,39 @@ transition:.3s;
     cursor:pointer;
 
 }
+.delivery-option{
 
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+.popup-content input[type="text"]{
+
+    width:100%;
+
+    padding:12px;
+
+    margin:10px 0;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+}
+
+.popup-content input[type="text"]:focus{
+
+    border-color:var(--primary);
+
+}
 .close{
     position:absolute;
     top:15px;
