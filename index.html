@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cozy Brews | Hostel Café</title>
+
+    <meta name="description"
+        content="Fresh hostel-made coffee, hot chocolate and snacks. Order directly on WhatsApp.">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!--================ NAVBAR ================-->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+    <a href="#home">
+
+        <img src="images/logo.png" alt="Cozy Brews Logo">
+
+        <span>Cozy Brews</span>
+
+    </a>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#popular">Popular</a></li>
+
+<li><a href="#menu">Menu</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+<div class="nav-buttons">
+
+<button class="theme-btn">
+
+<i class="fa-solid fa-moon"></i>
+
+</button>
+
+<button class="menu-btn">
+
+<i class="fa-solid fa-bars"></i>
+
+</button>
+
+</div>
+
+</nav>
+
+</header>
+
+<!--================ HERO ================-->
+
+<section class="hero" id="home">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+
+Freshly Brewed Happiness
+
+</h1>
+
+<p>
+
+Handcrafted coffee and hot drinks made fresh inside your hostel.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#menu" class="primary-btn">
+
+Explore Menu
+
+</a>
+
+<a href="#contact" class="secondary-btn">
+
+Contact Us
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ SEARCH ================-->
+
+<section class="search-section">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="search"
+placeholder="Search your favourite drink...">
+
+</div>
+
+</section>
+
+<!--================ CATEGORY FILTER ================-->
+
+<section class="categories">
+
+<button class="category active" data-category="all">
+
+All
+
+</button>
+
+<button class="category" data-category="coffee">
+
+Coffee
+
+</button>
+
+<button class="category" data-category="hot">
+
+Hot Drinks
+
+</button>
+
+</section>
+
+<!--================ POPULAR ================-->
+
+<section class="popular" id="popular">
+
+<h2>
+
+Best Sellers
+
+</h2>
+
+<p>
+
+Our customers' favourite drinks.
+
+</p>
+
+<div class="popular-grid">
+
+<div class="popular-card" data-id="2">
+
+<img src="images/butterscotch.jpg" alt="Butterscotch Coffee">
+
+<h3>Butterscotch Coffee</h3>
+
+<span>₹40 / ₹50</span>
+
+</div>
+
+<div class="popular-card" data-id="5">
+
+<img src="images/hot-chocolate.jpg" alt="Hot Chocolate">
+
+<h3>Hot Chocolate</h3>
+
+<span>₹50 / ₹65</span>
+
+</div>
+
+<div class="popular-card" data-id="8">
+
+<img src="images/oreo.jpg" alt="Hot Oreo Shake">
+
+<h3>Hot Oreo Shake</h3>
+
+<span>₹65 / ₹75</span>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ MENU ================-->
+
+<section class="menu-section" id="menu">
+
+<div class="section-title">
+
+<h2>
+
+Our Menu
+
+</h2>
+
+<p>
+
+Choose your favourite drink.
+
+</p>
+
+</div>
+
+<!-- JavaScript will generate all menu cards here -->
+
+<div class="products">
+
+</div>
+
+</section>
+
+<!--================ ABOUT ================-->
+
+<section class="about" id="about">
+
+<div class="about-image">
+
+<img src="images/hero.jpg" alt="Cozy Brews">
+
+</div>
+
+<div class="about-content">
+
+<h2>
+
+About Cozy Brews
+
+</h2>
+
+<p>
+
+Cozy Brews is your hostel café serving handcrafted drinks with premium ingredients.
+
+Every drink is freshly prepared after you order.
+
+</p>
+
+<div class="about-features">
+
+<div>
+
+<i class="fa-solid fa-heart"></i>
+
+Freshly Made
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-leaf"></i>
+
+Quality Ingredients
+
+</div>
+
+<div>
+
+<i class="fa-solid fa-bolt"></i>
+
+Quick Service
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!--================ CONTACT ================-->
+
+<section class="contact" id="contact">
+
+<h2>
+
+Get In Touch
+
+</h2>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<h3>
+
+WhatsApp
+
+</h3>
+
+<p>
+
+8866463771
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-location-dot"></i>
+
+<h3>
+
+Location
+
+</h3>
+
+<p>
+
+Hostel Campus
+
+</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>
+
+Open
+
+</h3>
+
+<p>
+
+5 PM – 12 AM
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <h2>
+                ☕ Cozy Brews
+            </h2>
+
+            <p>
+                Sip • Smile • Repeat
+            </p>
+
+            <p>
+                Freshly brewed happiness inside your hostel.
+            </p>
+
+        </div>
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+
+            <a href="#popular">Popular</a>
+
+            <a href="#menu">Menu</a>
+
+            <a href="#about">About</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <p>
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                8866463771
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                Hostel Campus
+
+            </p>
+
+            <p>
+
+                <i class="fa-solid fa-clock"></i>
+
+                Open Daily • 10 PM – 11 PM
+
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="copyright">
+
+        © 2026 Cozy Brews • Made with ❤️
+
+    </div>
+
+</footer>
+
+<!-- ================= FLOATING WHATSAPP ================= -->
+
+<a
+class="floating-whatsapp"
+aria-label="Chat on WhatsApp"
+href="https://wa.me/918866463771"
+target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+</a>
+
+<!-- ================= BACK TO TOP ================= -->
+
+<button id="topBtn">
+
+<i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+<!-- ================= ORDER POPUP ================= -->
+
+<div class="popup" id="popup">
+
+<div class="popup-content">
+
+<span class="close">
+
+&times;
+
+</span>
+
+<img
+id="popupImage"
+src=""
+alt="Drink">
+
+<h2 id="popupTitle">
+
+Drink Name
+
+</h2>
+
+<div id="popupIngredients">
+
+</div>
+
+<hr>
+
+<h3>
+
+Choose Cup Size
+
+</h3>
+
+<div class="sizes">
+
+<label class="size-card">
+
+<input
+type="radio"
+name="size"
+value="small"
+checked>
+
+Small
+
+<span id="smallPrice">
+
+₹40
+
+</span>
+
+</label>
+
+<label>
+
+<input
+type="radio"
+name="size"
+value="large">
+
+Large
+
+<span id="largePrice">
+
+₹50
+
+</span>
+
+</label>
+
+</div>
+
+<hr>
+
+<h3>
+
+Extra Toppings
+
+</h3>
+<label class="topping">
+
+<input
+type="checkbox"
+id="kitkat">
+
+KitKat (+₹15)
+
+</label>
+
+<label class="topping">
+
+<input
+type="checkbox"
+id="chocolate">
+
+Extra Chocolate (+₹20)
+
+</label>
+
+<hr>
+
+<h3>
+
+Quantity
+
+</h3>
+
+<div class="quantity-box">
+
+<button id="minus" type="button">
+
+−
+
+</button>
+
+<span id="quantity">
+
+1
+
+</span>
+
+<button id="plus" type="button">
+
++
+
+</button>
+
+</div>
+
+<hr>
+
+<h2>
+
+Total
+
+₹<span id="total">
+
+40
+
+</span>
+
+</h2>
+
+<button id="orderBtn" type="button">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Order on WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<!-- ================= LOADER ================= -->
+
+<div class="loader" id="loader">
+
+<div class="coffee-loader">
+
+☕
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
