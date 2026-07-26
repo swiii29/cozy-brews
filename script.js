@@ -89,7 +89,7 @@ const drinks = [
     id:6,
     name:"Soup",
     category:"hot",
-    image:"images/soup.jpg",
+    image:"soup.jpg",
     small:30,
     large:40,
     bestseller:false,
