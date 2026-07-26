@@ -87,15 +87,16 @@ const drinks = [
 
 {
     id:6,
-    name:"Black Coffee",
+    name:"Soup",
     category:"hot",
-    image:"images/black-coffee.jpg",
+    image:"images/soup.jpg",
     small:30,
     large:40,
     bestseller:false,
     ingredients:[
-        "Coffee",
-        "Hot Water"
+        "Soup Mix",
+        "Hot Water",
+        "Seasoning"
     ]
 },
 
@@ -233,8 +234,17 @@ const popupIngredients = document.getElementById("popupIngredients");
 const smallPrice = document.getElementById("smallPrice");
 const largePrice = document.getElementById("largePrice");
 
-const kitkat = document.getElementById("kitkat");
-const chocolate = document.getElementById("chocolate");
+const kitkat =
+document.getElementById("kitkat");
+
+const oreo =
+document.getElementById("oreo");
+
+const waffy =
+document.getElementById("waffy");
+
+const chocolate =
+document.getElementById("chocolate");
 const customerName =
 document.getElementById("customerName");
 
@@ -291,9 +301,15 @@ ${selectedDrink.ingredients
         'input[name="size"][value="small"]'
         ).checked = true;
 
+        
+
         kitkat.checked = false;
 
-        chocolate.checked = false;
+oreo.checked = false;
+
+waffy.checked = false;
+
+chocolate.checked = false;
 
         calculateTotal();
 
@@ -365,6 +381,10 @@ radio.addEventListener("change",calculateTotal);
 });
 kitkat.addEventListener("change",calculateTotal);
 
+oreo.addEventListener("change",calculateTotal);
+
+waffy.addEventListener("change",calculateTotal);
+
 chocolate.addEventListener("change",calculateTotal);
 
 // ======================================
@@ -389,15 +409,27 @@ function calculateTotal(){
 
     if(kitkat.checked){
 
-        total += 15;
+    total += 15;
 
-    }
+}
 
-    if(chocolate.checked){
+if(oreo.checked){
 
-        total += 20;
+    total += 15;
 
-    }
+}
+
+if(waffy.checked){
+
+    total += 20;
+
+}
+
+if(chocolate.checked){
+
+    total += 20;
+
+}
 const delivery =
 document.querySelector(
 'input[name="delivery"]:checked'
@@ -513,17 +545,33 @@ selectedDrink.large;
 
 if(kitkat.checked){
 
-toppings.push("KitKat");
+    toppings.push("KitKat");
 
-total+=15;
+    total += 15;
+
+}
+
+if(oreo.checked){
+
+    toppings.push("Oreo");
+
+    total += 15;
+
+}
+
+if(waffy.checked){
+
+    toppings.push("Chocolate Waffy");
+
+    total += 20;
 
 }
 
 if(chocolate.checked){
 
-toppings.push("Extra Chocolate");
+    toppings.push("Extra Chocolate");
 
-total+=20;
+    total += 20;
 
 }
 if(delivery==="room"){
